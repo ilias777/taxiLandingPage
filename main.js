@@ -1,6 +1,19 @@
 import "./style.scss";
 import * as bootstrap from "bootstrap";
 
+// Dropdown
+export const drop = document.querySelector(".dropdown-toggle").dropdown();
+
+// Toast
+let option = {
+  animation: true,
+  delay: 2000,
+};
+
+let toasthtml = document.querySelector(".toast");
+export let toastElement = new bootstrap.Toast(toasthtml, option);
+toastElement.show();
+
 // Animation One
 const targetOne = document.querySelectorAll(".scrollanimation");
 
