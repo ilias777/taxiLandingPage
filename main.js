@@ -1,6 +1,7 @@
 import "./style.scss";
 import * as bootstrap from "bootstrap";
 import "./js/language";
+// import "./js/dropdown";
 
 // Animation One
 const targetOne = document.querySelectorAll(".scrollanimation");
