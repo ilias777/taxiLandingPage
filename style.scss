@@ -1,1 +1,60 @@
 @import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+body::before {
+  display: block;
+  content: "";
+  height: 50px;
+}
+#app {
+  background: #a83a39;
+}
+.nav-item {
+  text-align: center;
+}
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+@media (max-width: 320px) {
+  .navbartext {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .para {
+    width: 65%;
+  }
+}
+@media (max-width: 770px) {
+  .line {
+    height: 15px;
+  }
+  .imgLanguage {
+    width: 65% !important;
+  }
+  .imgInfoTravel {
+    width: 50% !important;
+  }
+}
+.scrollanimation {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 700ms ease-in-out;
+}
+.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+.scrollIn {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 700ms ease-in-out;
+}
+.visibleIn {
+  transform: translateX(0);
+  opacity: 1;
+}
